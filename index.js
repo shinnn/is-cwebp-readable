@@ -1,12 +1,15 @@
-/*!
- * is-webp-readable | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/is-webp-readable
-*/
 'use strict';
 
+var fileType = require('file-type');
+
 module.exports = function isCwebpReadable(buf) {
-  return require('is-png')(buf) ||
-         require('is-jpg')(buf) ||
-         require('is-tif')(buf) ||
-         require('is-webp')(buf);
+  var type = fileType(buf);
+
+  if (!type) {
+    return false;
+  }
+
+  var ext = type.ext;
+
+  return ext === 'png' || ext === 'jpg' || ext === 'tif' || ext === 'webp';
 };

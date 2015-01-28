@@ -38,10 +38,7 @@
     "cwebp"
   ],
   "dependencies": {
-    "is-jpg": "^1.0.0",
-    "is-png": "^1.0.0",
-    "is-tif": "^1.0.0",
-    "is-webp": "^1.0.0"
+    "file-type": "^2.0.4"
   },
   "devDependencies": {
     "eslint": "^0.13.0",
