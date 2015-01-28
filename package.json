@@ -1,6 +1,6 @@
 {
   "name": "is-cwebp-readable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if a Buffer/Uint8Array is available for cwebp image source",
   "repository": "shinnn/is-cwebp-readable",
   "author": {
