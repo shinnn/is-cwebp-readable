@@ -10,7 +10,7 @@ var fixture = new Buffer(100);
 suite('Detect file type', function () {
   set('iterations', 30000);
 
-  bench('logical OR', function() {
+  bench('logical OR (current version)', function() {
     main(fixture);
   });
 
