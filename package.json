@@ -9,7 +9,7 @@
   },
   "scripts": {
     "bench": "matcha benchmark/runner.js",
-    "pretest": "jscs *.js && eslint *.js",
+    "pretest": "jscs *.js benchmark/*.js && eslint *.js benchmark/*.js",
     "test": "node test.js | tap-spec",
     "coverage": "istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"

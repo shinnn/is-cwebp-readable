@@ -1,4 +1,4 @@
-/* glogals: suite, bench */
+/* globals set, suite, bench */
 'use strict';
 
 var main = require('..');
@@ -7,7 +7,7 @@ var regex = require('./regex.js');
 
 var fixture = new Buffer(100);
 
-suite('Detect file type', function () {
+suite('Detect file type', function() {
   set('iterations', 30000);
 
   bench('logical OR (current version)', function() {
