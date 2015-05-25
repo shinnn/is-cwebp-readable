@@ -10,8 +10,8 @@
 Check if a Buffer/Uint8Array is available for [cwebp](https://developers.google.com/speed/webp/docs/cwebp) image source
 
 ```javascript
-var fs = require('fs');
-var isCwebpReadable = require('is-cwebp-readable');
+const fs = require('fs');
+const isCwebpReadable = require('is-cwebp-readable');
 
 isCwebpReadable(fs.readFileSync('fixture.png')); //=> true
 isCwebpReadable(fs.readFileSync('fixture.bmp')); //=> false
@@ -28,7 +28,7 @@ npm install is-cwebp-readable
 ## API
 
 ```javascript
-var isCwebpReadable = require('is-cwebp-readable');
+const isCwebpReadable = require('is-cwebp-readable');
 ```
 
 ### isCwebpReadable(*buf*)

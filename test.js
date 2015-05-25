@@ -1,9 +1,9 @@
 'use strict';
 
-var isCwebpReadable = require('./');
-var test = require('tape');
+const isCwebpReadable = require('.');
+const test = require('tape');
 
-var fixtures = {
+const fixtures = {
   jpg: [
     255,
     216,
@@ -329,7 +329,7 @@ var fixtures = {
   ]
 };
 
-test('isCwebpReadable', function(t) {
+test('isCwebpReadable', t => {
   t.plan(13);
 
   t.equal(isCwebpReadable.name, 'isCwebpReadable', 'should have a function name.');
@@ -338,13 +338,13 @@ test('isCwebpReadable', function(t) {
   t.ok(isCwebpReadable(new Uint8Array(fixtures.png)), 'should detect PNG from an Uint8Array.');
 
   t.ok(isCwebpReadable(new Buffer(fixtures.jpg)), 'should detect JPEG from a buffer.');
-  t.ok(isCwebpReadable(new Uint8Array(fixtures.png)), 'should detect JPEG from an Uint8Array.');
+  t.ok(isCwebpReadable(new Uint8Array(fixtures.jpg)), 'should detect JPEG from an Uint8Array.');
 
   t.ok(isCwebpReadable(new Buffer(fixtures.tif)), 'should detect TIFF from a buffer.');
-  t.ok(isCwebpReadable(new Uint8Array(fixtures.png)), 'should detect TIFF from an Uint8Array.');
+  t.ok(isCwebpReadable(new Uint8Array(fixtures.tif)), 'should detect TIFF from an Uint8Array.');
 
   t.ok(isCwebpReadable(new Buffer(fixtures.webp)), 'should detect WEBP from a buffer.');
-  t.ok(isCwebpReadable(new Uint8Array(fixtures.png)), 'should detect WEBP from an Uint8Array.');
+  t.ok(isCwebpReadable(new Uint8Array(fixtures.webp)), 'should detect WEBP from an Uint8Array.');
 
   t.notOk(
     isCwebpReadable(new Buffer('foo')),
