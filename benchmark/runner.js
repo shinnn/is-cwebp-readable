@@ -1,24 +1,29 @@
 /* globals set, suite, bench */
 'use strict';
 
-var main = require('..');
-var indexOf = require('./index-of.js');
-var regex = require('./regex.js');
+const main = require('..');
+const indexOf = require('./index-of.js');
+const keys = require('./keys.js');
+const regex = require('./regex.js');
 
-var fixture = new Buffer(100);
+const fixture = new Buffer(100);
 
-suite('Detect file type', function() {
+suite('Detect file type', () => {
   set('iterations', 30000);
 
-  bench('logical OR (current version)', function() {
+  bench('logical OR (current version)', () => {
     main(fixture);
   });
 
-  bench('array.indexOf', function() {
+  bench('array.indexOf', () => {
     indexOf(fixture);
   });
 
-  bench('regular expression', function() {
+  bench('keys', () => {
+    keys(fixture);
+  });
+
+  bench('regular expression', () => {
     regex(fixture);
   });
 });
