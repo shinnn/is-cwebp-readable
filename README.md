@@ -40,6 +40,4 @@ It returns `true` if the data is [PNG](https://wikipedia.org/wiki/Portable_Netwo
 
 ## License
 
-Copyright (c) 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
-
-Licensed under [the MIT License](./LICENSE).
+[The Unlicense](./LICENSE)
