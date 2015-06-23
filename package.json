@@ -31,15 +31,15 @@
     "cwebp"
   ],
   "dependencies": {
-    "file-type": "^2.6.0"
+    "file-type": "^2.7.0"
   },
   "devDependencies": {
     "@shinnn/eslintrc-node": "^1.0.2",
-    "eslint": "^0.21.2",
-    "istanbul": "^0.3.14",
-    "istanbul-coveralls": "^1.0.2",
+    "eslint": "^0.23.0",
+    "istanbul": "^0.3.16",
+    "istanbul-coveralls": "^1.0.3",
     "matcha": "^0.6.0",
-    "tap-spec": "^3.0.0",
+    "tap-spec": "^4.0.2",
     "tape": "^4.0.0"
   }
 }
