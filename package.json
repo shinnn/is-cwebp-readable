@@ -5,10 +5,10 @@
   "repository": "shinnn/is-cwebp-readable",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "bench": "node --harmony_arrow_functions node_modules/.bin/_matcha benchmark/runner.js",
-    "pretest": "eslint --config node_modules/@shinnn/eslintrc-node/rc.json index.js benchmark test.js",
-    "test": "node --harmony_arrow_functions test.js | tap-spec",
-    "coverage": "node --harmony_arrow_functions node_modules/.bin/istanbul cover test.js",
+    "bench": "node --strong_mode --harmony_array_includes node_modules/.bin/_matcha benchmark/runner.js",
+    "pretest": "eslint --config @shinnn/node-legacy index.js benchmark test.js",
+    "test": "node --strong_mode test.js | tap-spec",
+    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
   },
   "license": "Unlicense",

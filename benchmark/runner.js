@@ -1,5 +1,5 @@
 /* globals set, suite, bench */
-'use strict';
+'use strong';
 
 const main = require('..');
 const indexOf = require('./index-of.js');
