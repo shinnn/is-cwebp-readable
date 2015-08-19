@@ -2,7 +2,7 @@
 
 var fileType = require('file-type');
 
-var validTypes = ['png', 'jpg', 'tif', 'webp'];
+var vilidTypes = ['png', 'jpg', 'tif', 'webp'];
 
 module.exports = function isCwebpReadable(buf) {
   var type = fileType(buf);
@@ -11,5 +11,5 @@ module.exports = function isCwebpReadable(buf) {
     return false;
   }
 
-  return validTypes.indexOf(type.ext) === -1;
+  return vilidTypes.includes(type.ext);
 };
