@@ -34,12 +34,12 @@
     "file-type": "^2.7.0"
   },
   "devDependencies": {
-    "@shinnn/eslintrc-node": "^1.0.2",
-    "eslint": "^0.23.0",
-    "istanbul": "^0.3.16",
+    "@shinnn/eslint-config-node-legacy": "^1.0.0",
+    "eslint": "^1.6.0",
+    "istanbul": "^0.3.22",
     "istanbul-coveralls": "^1.0.3",
     "matcha": "^0.6.0",
-    "tap-spec": "^4.0.2",
-    "tape": "^4.0.0"
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.1"
   }
 }
