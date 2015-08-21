@@ -33,7 +33,7 @@ const isCwebpReadable = require('is-cwebp-readable');
 
 ### isCwebpReadable(*buf*)
 
-*buf*: [`Buffer`](https://iojs.org/api/buffer.html#buffer_class_buffer) or [`Uint8Array`](https://www.khronos.org/registry/typedarray/specs/latest/#TYPEDARRAYS)  
+*buf*: [`Buffer`](https://nodejs.org/api/buffer.html#buffer_class_buffer) or [`Uint8Array`](https://www.khronos.org/registry/typedarray/specs/latest/#TYPEDARRAYS)  
 Return: `Boolean`
 
 It returns `true` if the data is [PNG](https://wikipedia.org/wiki/Portable_Network_Graphics), [JPEG](https://wikipedia.org/wiki/JPEG), [TIFF](https://wikipedia.org/wiki/Tagged_Image_File_Format), or [WebP](https://wikipedia.org/wiki/WebP), otherwise `false`.
