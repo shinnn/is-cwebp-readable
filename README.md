@@ -3,9 +3,9 @@
 [![NPM version](https://img.shields.io/npm/v/is-cwebp-readable.svg)](https://www.npmjs.com/package/is-cwebp-readable)
 [![Build Status](https://travis-ci.org/shinnn/is-cwebp-readable.svg?branch=master)](https://travis-ci.org/shinnn/is-cwebp-readable)
 [![Build status](https://ci.appveyor.com/api/projects/status/lrfe3hgtupsg45l1?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/is-cwebp-readable)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/is-cwebp-readable.svg)](https://coveralls.io/r/shinnn/is-cwebp-readable)
-[![Dependency Status](https://img.shields.io/david/shinnn/is-cwebp-readable.svg?style=flat&label=deps)](https://david-dm.org/shinnn/is-cwebp-readable)
-[![devDependency Status](https://img.shields.io/david/dev/shinnn/is-cwebp-readable.svg?style=flat&label=devDeps)](https://david-dm.org/shinnn/is-cwebp-readable#info=devDependencies)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/is-cwebp-readable.svg)](https://coveralls.io/github/shinnn/is-cwebp-readable)
+[![Dependency Status](https://img.shields.io/david/shinnn/is-cwebp-readable.svg?label=deps)](https://david-dm.org/shinnn/is-cwebp-readable)
+[![devDependency Status](https://img.shields.io/david/dev/shinnn/is-cwebp-readable.svg?label=devDeps)](https://david-dm.org/shinnn/is-cwebp-readable#info=devDependencies)
 
 Check if a Buffer/Uint8Array is available for [cwebp](https://developers.google.com/speed/webp/docs/cwebp) image source
 
