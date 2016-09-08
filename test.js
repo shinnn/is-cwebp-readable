@@ -1,4 +1,4 @@
-'use strong';
+'use strict';
 
 const isCwebpReadable = require('.');
 const test = require('tape');

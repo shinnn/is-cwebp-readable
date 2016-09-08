@@ -1,5 +1,5 @@
 /* globals set, suite, bench */
-'use strong';
+'use strict';
 
 const main = require('..');
 const includes = require('./includes.js');

@@ -5,10 +5,10 @@
   "repository": "shinnn/is-cwebp-readable",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "bench": "node --strong_mode --throw-deprecation --track-heap-objects node_modules/.bin/_matcha benchmark/runner.js",
-    "pretest": "eslint --config @shinnn/node-legacy index.js benchmark test.js",
-    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js | tap-spec",
-    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
+    "bench": "_matcha benchmark/runner.js",
+    "pretest": "eslint --fix --config @shinnn/node-legacy index.js benchmark test.js",
+    "test": "node --throw-deprecation --track-heap-objects test.js | tap-spec",
+    "coverage": "istanbul cover test.js"
   },
   "license": "Unlicense",
   "files": [
