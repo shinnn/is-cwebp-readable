@@ -33,11 +33,11 @@
     "file-type": "^3.1.0"
   },
   "devDependencies": {
-    "@shinnn/eslint-config-node-legacy": "^2.0.0",
-    "eslint": "^2.9.0",
-    "istanbul": "^0.4.3",
+    "@shinnn/eslint-config-node-legacy": "^3.0.0",
+    "eslint": "^3.4.0",
+    "istanbul": "^0.4.5",
     "matcha": "^0.7.0",
     "tap-spec": "^4.1.1",
-    "tape": "^4.5.1"
+    "tape": "^4.6.0"
   }
 }
