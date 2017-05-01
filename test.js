@@ -330,24 +330,22 @@ const fixtures = {
 };
 
 test('isCwebpReadable', t => {
-  t.plan(13);
+  t.strictEqual(isCwebpReadable.name, 'isCwebpReadable', 'should have a function name.');
 
-  t.equal(isCwebpReadable.name, 'isCwebpReadable', 'should have a function name.');
-
-  t.ok(isCwebpReadable(new Buffer(fixtures.png)), 'should detect PNG from a buffer.');
+  t.ok(isCwebpReadable(Buffer.from(fixtures.png)), 'should detect PNG from a buffer.');
   t.ok(isCwebpReadable(new Uint8Array(fixtures.png)), 'should detect PNG from an Uint8Array.');
 
-  t.ok(isCwebpReadable(new Buffer(fixtures.jpg)), 'should detect JPEG from a buffer.');
+  t.ok(isCwebpReadable(Buffer.from(fixtures.jpg)), 'should detect JPEG from a buffer.');
   t.ok(isCwebpReadable(new Uint8Array(fixtures.jpg)), 'should detect JPEG from an Uint8Array.');
 
-  t.ok(isCwebpReadable(new Buffer(fixtures.tif)), 'should detect TIFF from a buffer.');
+  t.ok(isCwebpReadable(Buffer.from(fixtures.tif)), 'should detect TIFF from a buffer.');
   t.ok(isCwebpReadable(new Uint8Array(fixtures.tif)), 'should detect TIFF from an Uint8Array.');
 
-  t.ok(isCwebpReadable(new Buffer(fixtures.webp)), 'should detect WEBP from a buffer.');
+  t.ok(isCwebpReadable(Buffer.from(fixtures.webp)), 'should detect WEBP from a buffer.');
   t.ok(isCwebpReadable(new Uint8Array(fixtures.webp)), 'should detect WEBP from an Uint8Array.');
 
   t.notOk(
-    isCwebpReadable(new Buffer('foo')),
+    isCwebpReadable(Buffer.from('foo')),
     'should return false when it takes a buffer cwebp cannot read.'
   );
   t.notOk(
@@ -362,4 +360,6 @@ test('isCwebpReadable', t => {
     isCwebpReadable(),
     'should return false when it takes no arguments.'
   );
+
+  t.end();
 });

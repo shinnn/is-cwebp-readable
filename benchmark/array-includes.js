@@ -1,11 +1,11 @@
 'use strict';
 
-var fileType = require('file-type');
+const fileType = require('file-type');
 
-var vilidTypes = ['png', 'jpg', 'tif', 'webp'];
+const vilidTypes = ['png', 'jpg', 'tif', 'webp'];
 
 module.exports = function isCwebpReadable(buf) {
-  var type = fileType(buf);
+  const type = fileType(buf);
 
   if (!type) {
     return false;

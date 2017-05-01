@@ -1,9 +1,9 @@
 'use strict';
 
-var fileType = require('file-type');
+const fileType = require('file-type');
 
 module.exports = function isCwebpReadable(buf) {
-  var type = fileType(buf);
+  const type = fileType(buf);
 
   if (!type) {
     return false;
