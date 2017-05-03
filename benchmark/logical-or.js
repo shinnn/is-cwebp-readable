@@ -2,8 +2,6 @@
 
 const fileType = require('file-type');
 
-const vilidTypes = ['png', 'jpg', 'tif', 'webp'];
-
 function fn(buf) {
   const type = fileType(buf);
 
@@ -11,7 +9,9 @@ function fn(buf) {
     return false;
   }
 
-  return vilidTypes.includes(type.ext);
+  const ext = type.ext;
+
+  return ext === 'png' || ext === 'jpg' || ext === 'tif' || ext === 'webp';
 }
 
-require('./run')(fn, 'Array#includes()');
+require('./run')(fn, 'Logical OR');

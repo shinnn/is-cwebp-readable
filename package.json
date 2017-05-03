@@ -5,8 +5,8 @@
   "repository": "shinnn/is-cwebp-readable",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "bench": "_matcha benchmark/runner.js",
-    "pretest": "eslint --fix --format=codeframe index.js benchmark test.js",
+    "bench": "node -p \"require('chalk').yellow('NOTE: Smaller is better.\\n')\" && node benchmark/array-index-of.js && node benchmark/array-includes.js && node benchmark/keys.js && node benchmark/logical-or.js && node benchmark/regexp-test.js && node benchmark/set.js && node -p \"''\"",
+    "pretest": "eslint --fix --format=codeframe benchmark index.js test.js",
     "test": "node --throw-deprecation --track-heap-objects test.js | tap-spec",
     "coverage": "istanbul cover test.js"
   },
@@ -36,7 +36,6 @@
     "@shinnn/eslint-config-node": "^3.0.0",
     "eslint": "^3.19.0",
     "istanbul": "^0.4.5",
-    "matcha": "^0.7.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
   },

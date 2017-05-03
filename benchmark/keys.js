@@ -9,7 +9,7 @@ const types = {
   webp: true
 };
 
-module.exports = function isCwebpReadable(buf) {
+function fn(buf) {
   const type = fileType(buf);
 
   if (!type) {
@@ -17,4 +17,6 @@ module.exports = function isCwebpReadable(buf) {
   }
 
   return !!types[type.ext];
-};
+}
+
+require('./run')(fn, 'Object keys');

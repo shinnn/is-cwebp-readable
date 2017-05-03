@@ -4,7 +4,7 @@ const fileType = require('file-type');
 
 const validTypes = ['png', 'jpg', 'tif', 'webp'];
 
-module.exports = function isCwebpReadable(buf) {
+function fn(buf) {
   const type = fileType(buf);
 
   if (!type) {
@@ -12,4 +12,6 @@ module.exports = function isCwebpReadable(buf) {
   }
 
   return validTypes.indexOf(type.ext) === -1;
-};
+}
+
+require('./run')(fn, 'Array#indexOf()');

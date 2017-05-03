@@ -2,7 +2,12 @@
 
 const fileType = require('file-type');
 
-const vilidTypes = ['png', 'jpg', 'tif', 'webp'];
+const types = new Set([
+  'png',
+  'jpg',
+  'tif',
+  'webp'
+]);
 
 function fn(buf) {
   const type = fileType(buf);
@@ -11,7 +16,7 @@ function fn(buf) {
     return false;
   }
 
-  return vilidTypes.includes(type.ext);
+  return types.has(type.ext);
 }
 
-require('./run')(fn, 'Array#includes()');
+require('./run')(fn, 'Set#has()');
