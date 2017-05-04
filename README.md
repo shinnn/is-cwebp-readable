@@ -40,4 +40,4 @@ It returns `true` if the data is [PNG](https://wikipedia.org/wiki/Portable_Netwo
 
 ## License
 
-[The Unlicense](./LICENSE)
+[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed)
