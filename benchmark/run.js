@@ -1,22 +1,47 @@
 'use strict';
 
-const {strictEqual} = require('assert');
+const {strictEqual} = require('assert').strict;
 
 const {cyan} = require('chalk');
 
 module.exports = function runBench(fn, suiteName) {
-  const smallBuf = Buffer.from('0'.repeat(10));
-  const buf = Buffer.from('0'.repeat(100));
-  const largeBuf = Buffer.from('0'.repeat(1000));
-  let i = 2000000;
+	const webp = Buffer.from([
+		82,
+		73,
+		70,
+		70,
+		18,
+		0,
+		0,
+		0,
+		87,
+		69,
+		66,
+		80,
+		86,
+		80,
+		56,
+		76,
+		6,
+		0,
+		0,
+		0,
+		47,
+		65,
+		108,
+		111,
+		0,
+		107
+	]);
+	let i = 10000000;
 
-  console.time(cyan(suiteName));
+	strictEqual(fn(webp), true);
 
-  while (i--) {
-    strictEqual(fn(smallBuf), false);
-    strictEqual(fn(buf), false);
-    strictEqual(fn(largeBuf), false);
-  }
+	console.time(cyan(suiteName));
 
-  console.timeEnd(cyan(suiteName));
+	while (i--) {
+		fn(webp);
+	}
+
+	console.timeEnd(cyan(suiteName));
 };
