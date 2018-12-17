@@ -9,7 +9,7 @@ module.exports = function isCwebpReadable(buf) {
 		return false;
 	}
 
-	const ext = type.ext;
+	const {ext} = type;
 
 	return ext === 'png' || ext === 'jpg' || ext === 'tif' || ext === 'webp';
 };
