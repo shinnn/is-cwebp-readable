@@ -4,7 +4,7 @@
 	"description": "Check if a Buffer/Uint8Array is available for cwebp image source",
 	"repository": "shinnn/is-cwebp-readable",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-	"license": "CC0-1.0",
+	"license": "ISC",
 	"scripts": {
 		"bench": "node -p \"require('chalk').yellow('NOTE: Smaller is better.\\n')\" && node benchmark/array-index-of.js && node benchmark/array-includes.js && node benchmark/keys.js && node benchmark/logical-or.js && node benchmark/regexp-test.js && node benchmark/set.js && node -p \"''\"",
 		"pretest": "eslint .",
